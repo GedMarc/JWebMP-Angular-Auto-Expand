@@ -2,14 +2,13 @@ package za.co.mmagon.jwebswing.plugins.angularautoexpand;
 
 import za.co.mmagon.jwebswing.Page;
 import za.co.mmagon.jwebswing.PageConfigurator;
-import za.co.mmagon.jwebswing.base.ComponentHierarchyBase;
 import za.co.mmagon.jwebswing.base.angular.AngularPageConfigurator;
 import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 import za.co.mmagon.jwebswing.plugins.PluginInformation;
 import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
 
 /**
- * Allows for elements to have a zoom in animation by adding a class
+ * Allows for elements to have an auto expand by adding a class
  *
  * @author Marc Magon
  * @since 16 Jun 2017
@@ -54,10 +53,5 @@ public class AngularAutoExpandPageConfigurator extends PageConfigurator
             page.getAngular().getAngularDirectives().add(new AngularAutoExpandDirective());
         }
         return page;
-    }
-
-    public static void addZoomEffect(ComponentHierarchyBase component)
-    {
-        component.addClass("zoomIn");
     }
 }

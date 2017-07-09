@@ -19,7 +19,7 @@ class AngularAutoExpandDirective extends AngularDirectiveBase
      */
     public AngularAutoExpandDirective()
     {
-        super("AutoExpand");
+        super("AngularAutoExpand");
     }
 
     @Override
