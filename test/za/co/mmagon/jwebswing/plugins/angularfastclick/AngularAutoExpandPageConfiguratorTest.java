@@ -1,4 +1,4 @@
-package za.co.mmagon.jwebswing.plugins.angularautoexpand;
+package za.co.mmagon.jwebswing.plugins.angularfastclick;
 
 import org.junit.jupiter.api.Test;
 import za.co.mmagon.jwebswing.BaseTestClass;

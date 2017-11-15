@@ -1,4 +1,4 @@
-package za.co.mmagon.jwebswing.plugins.angularautoexpand;
+package za.co.mmagon.jwebswing.plugins.angularfastclick;
 
 import za.co.mmagon.FileTemplates;
 import za.co.mmagon.jwebswing.base.angular.directives.AngularDirectiveBase;
