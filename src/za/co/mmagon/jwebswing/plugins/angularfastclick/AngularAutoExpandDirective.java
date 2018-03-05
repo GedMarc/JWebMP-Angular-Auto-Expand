@@ -9,7 +9,8 @@ import za.co.mmagon.jwebswing.base.angular.directives.AngularDirectiveBase;
  * @author Marc Magon
  * @since 30 May 2017
  */
-class AngularAutoExpandDirective extends AngularDirectiveBase
+public class AngularAutoExpandDirective
+		extends AngularDirectiveBase
 {
 
 	private static final long serialVersionUID = 1L;
@@ -25,6 +26,7 @@ class AngularAutoExpandDirective extends AngularDirectiveBase
 	@Override
 	public String renderFunction()
 	{
-		return FileTemplates.getFileTemplate(AngularAutoExpandDirective.class, "autoExpand", "autoExpand").toString();
+		return FileTemplates.getFileTemplate(AngularAutoExpandDirective.class, "autoExpand", "autoExpand.min")
+		                    .toString();
 	}
 }
