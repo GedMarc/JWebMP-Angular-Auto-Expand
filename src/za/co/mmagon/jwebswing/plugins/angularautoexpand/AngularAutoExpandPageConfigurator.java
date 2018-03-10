@@ -1,4 +1,4 @@
-package za.co.mmagon.jwebswing.plugins.angularfastclick;
+package za.co.mmagon.jwebswing.plugins.angularautoexpand;
 
 import za.co.mmagon.jwebswing.Page;
 import za.co.mmagon.jwebswing.PageConfigurator;

@@ -1,4 +1,4 @@
-package za.co.mmagon.jwebswing.plugins.angularfastclick;
+package za.co.mmagon.jwebswing.plugins.angularautoexpand;
 
 import za.co.mmagon.FileTemplates;
 import za.co.mmagon.jwebswing.base.angular.directives.AngularDirectiveBase;
@@ -26,7 +26,7 @@ public class AngularAutoExpandDirective
 	@Override
 	public String renderFunction()
 	{
-		return FileTemplates.getFileTemplate(AngularAutoExpandDirective.class, "autoExpand", "autoExpand.min")
+		return FileTemplates.getFileTemplate(AngularAutoExpandDirective.class, "autoExpand", "autoExpand.min.js")
 		                    .toString();
 	}
 }
