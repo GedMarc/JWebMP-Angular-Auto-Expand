@@ -51,12 +51,42 @@ import javax.validation.constraints.NotNull;
 public class AngularAutoExpandPageConfigurator
 		implements IPageConfigurator
 {
+	/**
+	 * If this configurator is enabled
+	 */
+	private static boolean enabled = true;
+
 	/*
 	 * Constructs a new AngularAutoExpandPageConfigurator
 	 */
 	public AngularAutoExpandPageConfigurator()
 	{
 		//Nothing needed
+	}
+
+	/**
+	 * Method isEnabled returns the enabled of this AngularAnimatedChangePageConfigurator object.
+	 * <p>
+	 * If this configurator is enabled
+	 *
+	 * @return the enabled (type boolean) of this AngularAnimatedChangePageConfigurator object.
+	 */
+	public static boolean isEnabled()
+	{
+		return AngularAutoExpandPageConfigurator.enabled;
+	}
+
+	/**
+	 * Method setEnabled sets the enabled of this AngularAnimatedChangePageConfigurator object.
+	 * <p>
+	 * If this configurator is enabled
+	 *
+	 * @param mustEnable
+	 * 		the enabled of this AngularAnimatedChangePageConfigurator object.
+	 */
+	public static void setEnabled(boolean mustEnable)
+	{
+		AngularAutoExpandPageConfigurator.enabled = mustEnable;
 	}
 
 	@NotNull
@@ -69,5 +99,11 @@ public class AngularAutoExpandPageConfigurator
 			AngularPageConfigurator.setRequired(true);
 		}
 		return page;
+	}
+
+	@Override
+	public boolean enabled()
+	{
+		return AngularAutoExpandPageConfigurator.enabled;
 	}
 }
