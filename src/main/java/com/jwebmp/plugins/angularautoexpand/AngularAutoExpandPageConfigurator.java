@@ -19,6 +19,7 @@ package com.jwebmp.plugins.angularautoexpand;
 
 import com.jwebmp.core.Page;
 import com.jwebmp.core.base.angular.AngularPageConfigurator;
+import com.jwebmp.core.base.html.inputs.InputTextAreaType;
 import com.jwebmp.core.plugins.ComponentInformation;
 import com.jwebmp.core.plugins.PluginInformation;
 import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
@@ -89,15 +90,23 @@ public class AngularAutoExpandPageConfigurator
 		AngularAutoExpandPageConfigurator.enabled = mustEnable;
 	}
 
+	/**
+	 * Applies the auto expand to a component of type text input
+	 *
+	 * @param component
+	 * 		An input text area
+	 */
+	public static void applyToComponent(InputTextAreaType<?> component)
+	{
+		component.addClass("auto-expand");
+	}
+
 	@NotNull
 	@Override
 	public Page configure(Page page)
 	{
-		if (!page.isConfigured())
-		{
-			JQueryPageConfigurator.setRequired(true);
-			AngularPageConfigurator.setRequired(true);
-		}
+		JQueryPageConfigurator.setRequired(true);
+		AngularPageConfigurator.setRequired(true);
 		return page;
 	}
 
