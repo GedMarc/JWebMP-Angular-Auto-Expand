@@ -40,8 +40,8 @@ import javax.validation.constraints.NotNull;
 		pluginCategories = "angular,auto expand,ui,web ui, framework",
 		pluginSubtitle = "Auto Expands Components with Angular",
 		pluginSourceUrl = "https://www.akveo.com/products.html",
-		pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-Angular-Auto-Expand/wiki",
-		pluginGitUrl = "https://github.com/GedMarc/JWebSwing-Angular-Auto-Expand",
+		pluginWikiUrl = "https://github.com/GedMarc/JWebMP-Angular-Auto-Expand/wiki",
+		pluginGitUrl = "https://github.com/GedMarc/JWebMP-Angular-Auto-Expand",
 		pluginIconUrl = "",
 		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "https://www.akveo.com/products.html",
@@ -50,7 +50,7 @@ import javax.validation.constraints.NotNull;
 		description = "Auto Expands Components with Angular",
 		url = "https://www.akveo.com/products.html")
 public class AngularAutoExpandPageConfigurator
-		implements IPageConfigurator
+		implements IPageConfigurator<AngularAutoExpandPageConfigurator>
 {
 	/**
 	 * If this configurator is enabled
