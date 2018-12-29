@@ -10,6 +10,7 @@ module com.jwebmp.plugins.angularautoexpand {
 	requires com.jwebmp.core;
 	requires java.validation;
 	requires com.jwebmp.guicedinjection;
+	requires com.jwebmp.core.angularjs;
 
 	provides com.jwebmp.core.services.IPageConfigurator with com.jwebmp.plugins.angularautoexpand.AngularAutoExpandPageConfigurator;
 	provides IAngularDirective with AngularAutoExpandDirective;

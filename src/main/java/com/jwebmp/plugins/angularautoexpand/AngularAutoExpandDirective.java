@@ -2,7 +2,6 @@ package com.jwebmp.plugins.angularautoexpand;
 
 import com.jwebmp.core.FileTemplates;
 import com.jwebmp.core.base.angular.directives.AngularDirectiveBase;
-import com.jwebmp.core.base.angular.services.IAngularDirective;
 
 /**
  * The Angular Auto Expand Directive that is applied
@@ -11,11 +10,8 @@ import com.jwebmp.core.base.angular.services.IAngularDirective;
  * @since 30 May 2017
  */
 public class AngularAutoExpandDirective
-		extends AngularDirectiveBase
-		implements IAngularDirective<AngularAutoExpandDirective>
+		extends AngularDirectiveBase<AngularAutoExpandDirective>
 {
-
-
 	/*
 	 * Constructs a new AngularAutoExpandDirective
 	 */
